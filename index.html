@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="main.js"></script>
         <title>Mixed Messages</title>
     </head>
     <body>
@@ -15,10 +16,10 @@
                 <br>
                 <br>
                 <br>
-                <label  for="skillScore">What is your skillscore?</label>
+                <label for="skillScore">What is your skillscore?</label>
                 <br>
                 <br>
-                <input type ="number" id="skillScore">
+                <input type ="number" id="skillScore" min = 0 max = 18>
                 <br>
                 <br>
                 <br>
@@ -32,15 +33,14 @@
                 </select>
                 <br>
                 <br>
-                <button type="submit" id="sendInput" name="sendInput">Submit</button>
                 <br>
                 <br>
                 <br>
                 <br>
-                <br>
-                <br>
-                <textarea id="generatedMess" name ="generatedMess" rows="10" cols="30"></textarea>                
+                <button type="submit" id="sendInput" name="sendInput" onclick="catchInput()">Submit</button>               
             </form>
         </div>
     </body>
 </html>
+
+
